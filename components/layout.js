@@ -3,11 +3,16 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import { BsSun, BsMoon } from 'react-icons/bs'
+
+import { useDarkMode } from './useDarkMode';
 
 const name = 'Melanie';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'My Blog';
 
 export default function Layout({ children, home }) {
+  const [isDark, setIsDark] = useDarkMode()
+
   return (
     <div className={styles.container}>
       <Head>
@@ -25,6 +30,17 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+
+
+
+      <nav className={styles.nav}>
+        <button onClick={() => setIsDark(!isDark)}>
+					{isDark ? <BsSun/> : <BsMoon/>}
+				</button>
+      </nav>
+
+
+
       <header className={styles.header}>
         {home ? (
           <>
@@ -40,23 +56,15 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
+            <Image
+              priority
+              src="/images/profile.jpg"
+              className={utilStyles.borderCircle}
+              height={108}
+              width={108}
+              alt={name}
+            />
+            <h2 className={utilStyles.headingLg}>{name}</h2>
           </>
         )}
       </header>
