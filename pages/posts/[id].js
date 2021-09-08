@@ -7,6 +7,7 @@ import utilStyles from '../../styles/utils.module.css';
 export default function Post({ postData }) {
   return (
     <Layout>
+      {console.log(postData.contentHtml)}
       <Head>
         <title>{postData.title}</title>
       </Head>
