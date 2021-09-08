@@ -1,7 +1,3 @@
-// import { cy, it } from "date-fns/locale";
-
-// import { it } from "date-fns/locale";
-
 describe('Details page', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/')
