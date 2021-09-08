@@ -1,21 +1,26 @@
 import { useState, useEffect } from 'react';
 
 export const useDarkMode = () => {
-	const [isDark, setIsDark] = useState(false);
+	const [isDark, setIsDark] = useState(() => {
+		try {
+			const item = window.localStorage.getItem('isDarkMode');
+			return item ? JSON.parse(item) : undefined;
+		} catch (error) {
+			return false;
+		}
+	});
 
-  //need to set local storage to display details page the same as home page 
-
-  useEffect(() => {
+	useEffect(() => {
 		isDark
 			? window.document.body.classList.add('dark')
-			: window.document.body.classList.remove('dark')
+			: window.document.body.classList.remove('dark');
 
 		try {
-			window.setItem('isDarkMode', isDark)
+			window.localStorage.setItem('isDarkMode', isDark);
 		} catch (error) {
-			console.error('unable to change setting')
+			console.error('unable to access localstorage');
 		}
 	}, [isDark]);
 
 	return [isDark, setIsDark];
-}
+};
