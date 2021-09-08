@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
 export const useDarkMode = () => {
 	const [isDark, setIsDark] = useState(false);
@@ -11,9 +11,9 @@ export const useDarkMode = () => {
 		try {
 			window.setItem('isDarkMode', isDark)
 		} catch (error) {
-			console.error('unable to access localstorage')
+			console.error('unable to change setting')
 		}
 	}, [isDark]);
 
-	return [isDark, setIsDark]
+	return [isDark, setIsDark];
 }

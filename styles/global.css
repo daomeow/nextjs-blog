@@ -5,6 +5,7 @@ body {
   font-size: 18px;
   background-color: #fff;
   color: #191919;
+  margin: 0; 
 }
 
 body.dark {
@@ -13,6 +14,7 @@ body.dark {
   font-size: 18px;
   background-color: #191919;
   color: #fff;
+  margin: 0;
 }
 
 * {
