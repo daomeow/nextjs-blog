@@ -9,7 +9,7 @@ export default function Family ({ postData }) {
         <title>{postData.name}</title>
       </Head>
       <section>
-        <h1>All About {postData.name}!</h1>
+        <h2>All About {postData.name}!</h2>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </section>
     </Layout>
