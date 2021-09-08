@@ -1,10 +1,16 @@
 describe('Details page', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/')
+    cy.visit('https://nextjs-blog-roan-seven.vercel.app')
       .get('.utils_list__S7_pe > :nth-child(1) > a').click()
   });
 
-  //check URL 
+  it('should yield the current URL', () => {
+    cy.url().should('include', '/posts/ssg-ssr')
+  });
+
+  it('should not have path to another blog', () => {
+    cy.url().should('not.contain', '/pre-rendering')
+  });
 
   it('should display the title of the blog post', () => {
     cy.get('title').contains('When to Use Static Generation')

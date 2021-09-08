@@ -10,7 +10,7 @@ const name = 'Melanie';
 export const siteTitle = 'My Blog';
 
 export default function Layout({ children, home }) {
-  const [isDark, setIsDark] = useDarkMode()
+  const [isDark, setIsDark] = useDarkMode();
 
   return (
     <div className={styles.container}>

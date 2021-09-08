@@ -1,10 +1,16 @@
 describe('Details page', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/')
+    cy.visit('https://nextjs-blog-roan-seven.vercel.app')
       .get('a').eq(2).click()
   });
 
-  //check URL 
+  it('should yield the current URL', () => {
+    cy.url().should('include', '/family/Bea')
+  });
+
+  it('should not have path to another blog', () => {
+    cy.url().should('not.contain', '/family/Patti')
+  });
 
   it('should display a title with that specific person\'s name', () => {
     cy.get('section > h2')

@@ -1,7 +1,6 @@
 describe('Home page', () => {
   beforeEach(() => {
-    // cy.visit('http://localhost:3000')
-    cy.visit('https://nextjs-blog-roan-seven.vercel.app/')
+    cy.visit('https://nextjs-blog-roan-seven.vercel.app/');
   });
 
   it('should display the blog\'s owner\'s name and profile picture', () => {
@@ -37,5 +36,5 @@ describe('Home page', () => {
 
   it('should display an error page for an invalid path', () => {
     cy.visit('https://nextjs-blog-roan-seven.vercel.app/gloo', {failOnStatusCode: false}).get('body').contains('404')
-  })
+  });
 });
