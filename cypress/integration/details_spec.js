@@ -20,5 +20,4 @@ describe('Details page', () => {
     cy.get('div > p')      
       .contains('foo')
   });
-
 });
