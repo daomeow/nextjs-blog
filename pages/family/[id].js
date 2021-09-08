@@ -1,8 +1,13 @@
+import Layout from '../../components/layout'
+
+
 const Family = () => {
   return (
-    <section>
-      <h1>Details Page</h1>
-    </section>
+    <Layout>
+      <section>
+        <h1>Details Page</h1>
+      </section>
+    </Layout>
   )
 }
 

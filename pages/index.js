@@ -51,7 +51,6 @@ export default function Home({ allPostsData, allFamilyData }) {
       <section>
         <h2 className={utilStyles.headingLg}>Family Members</h2>
         <ul>
-          {console.log(allFamilyData)}
           {allFamilyData.map(({ id, name }) => (
             <li key={id}>
               <Image
