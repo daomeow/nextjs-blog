@@ -1,6 +1,6 @@
 describe('Home page', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000')
+    cy.visit('https://nextjs-blog-roan-seven.vercel.app/');
   });
 
   it('should display the blog\'s owner\'s name and profile picture', () => {
@@ -32,5 +32,9 @@ describe('Home page', () => {
       .get('a').eq(4).contains('Craig')
       .get('a').eq(5).contains('Patti')
       .get('a').eq(6).contains('Rebecca')
+  });
+
+  it('should display an error page for an invalid path', () => {
+    cy.visit('https://nextjs-blog-roan-seven.vercel.app/gloo', {failOnStatusCode: false}).get('body').contains('404')
   });
 });
