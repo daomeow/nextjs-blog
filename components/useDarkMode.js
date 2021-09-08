@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 export const useDarkMode = () => {
 	const [isDark, setIsDark] = useState(false);
 
+  //need to set local storage to display details page the same as home page 
+
   useEffect(() => {
 		isDark
 			? window.document.body.classList.add('dark')

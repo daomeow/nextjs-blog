@@ -3,8 +3,7 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-import { BsSun, BsMoon } from 'react-icons/bs'
-
+import { BsSun, BsMoon } from 'react-icons/bs';
 import { useDarkMode } from './useDarkMode';
 
 const name = 'Melanie';
@@ -30,17 +29,11 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-
-
-
       <nav className={styles.nav}>
-        <button onClick={() => setIsDark(!isDark)}>
+        <button className={utilStyles.nightMode} onClick={() => setIsDark(!isDark)}>
 					{isDark ? <BsSun/> : <BsMoon/>}
 				</button>
       </nav>
-
-
-
       <header className={styles.header}>
         {home ? (
           <>
