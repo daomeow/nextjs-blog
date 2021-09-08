@@ -50,3 +50,15 @@
 .lightText {
   color: #666;
 }
+
+.familyList {
+  list-style: none;
+  display: flex;
+}
+
+.familyCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px;
+}

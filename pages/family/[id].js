@@ -5,9 +5,11 @@ import Head from 'next/head';
 export default function Family ({ postData }) {
   return (
     <Layout>
-      {console.log(postData.contentHtml)}
+      <Head>
+        <title>{postData.name}</title>
+      </Head>
       <section>
-        <h1>Details Page</h1>
+        <h1>All About {postData.name}!</h1>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </section>
     </Layout>

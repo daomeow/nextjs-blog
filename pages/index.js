@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Date from '../components/date';
 import Image from 'next/image';
 
+
 // By returning allPostsData inside the props object in getStaticProps, the blog posts will be passed to the Home component as a prop.
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -50,12 +51,12 @@ export default function Home({ allPostsData, allFamilyData }) {
       </section>
       <section>
         <h2 className={utilStyles.headingLg}>Family Members</h2>
-        <ul>
+        <ul className={utilStyles.familyList}>
           {allFamilyData.map(({ id, name }) => (
-            <li key={id}>
+            <li key={id} className={utilStyles.familyCard}>
               <Image
                 src={`/images/${name}.png`}
-                height={144}
+                height={200}
                 width={144}
               />
               <Link href={`family/${id}`}>
