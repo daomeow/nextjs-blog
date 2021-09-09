@@ -10,6 +10,10 @@
  - This blog application was built in about a day with Next.js that utilizes two dynamic routes, the ability to toggle between light and dark mode and includes end-to-end testing. Users have the ability to read recent blog posts and to learn a little more about my family! 
  - [Click here](https://nextjs-blog-roan-seven.vercel.app/) to deploy the application
 
+### Lighthouse audit:
+
+![accessibility](./public/images/accessibility.png)
+
 ## Installation
 1. Clone down this [repo](https://github.com/Gifty-capstone/gifty-frontend)
 2. `cd` into project directory
@@ -21,6 +25,8 @@
 ## Cypress Testing 
 - Run and view all tests in terminal with `npx cypress run`
 - Open Cypress window with `npx cypress open`
+
+![cypress](./public/images/cypress.png)
 
 ## Contributors
 <table>
