@@ -31,7 +31,7 @@ export default function Layout({ children, home }) {
       </Head>
       <nav className={styles.nav}>
         <button className={utilStyles.nightMode} aria-label='toggle'onClick={() => setIsDark(!isDark)}>
-					{isDark ? <BsSun/> : <BsMoon/>}
+					{isDark ? <BsSun className={utilStyles.sun}/> : <BsMoon/>}
 				</button>
       </nav>
       <header className={styles.header}>
