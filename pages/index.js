@@ -57,6 +57,7 @@ export default function Home({ allPostsData, allFamilyData }) {
                 src={`/images/${name}.png`}
                 height={200}
                 width={144}
+                alt={name}
               />
               <Link href={`/family/${id}`}>
                 <a>{name}</a>
