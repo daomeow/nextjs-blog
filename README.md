@@ -8,7 +8,7 @@
 
 <a name="description"></a>
 ## Description
- - This blog application was built in about a day with Next.js that utilizes two dynamic routes, the ability to toggle between light and dark mode and includes end-to-end testing. Users have the ability to read recent blog posts and to learn a little more about my family! 
+ - This blog application was built in about a day and a half with Next.js and utilizes two dynamic routes, the ability to toggle between light and dark mode and includes end-to-end testing. Users have the ability to read blog posts about Next.js and to learn a little more about my family! 
  - [Click here](https://nextjs-blog-roan-seven.vercel.app/) to deploy the application
  
 <img src="https://media.giphy.com/media/Gudz8o4uE5gnsh5xNK/giphy-downsized.gif" width="600">
