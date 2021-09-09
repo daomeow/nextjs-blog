@@ -3,6 +3,7 @@
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
+* [Cypress Testing](#cypress testing)
 * [Contributors](#contributors)
 
 ## Description
