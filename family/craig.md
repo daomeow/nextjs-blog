@@ -10,4 +10,4 @@ relationship: 'husband'
 - Backcountry snowboarding
 - Eating 
 
-I met my husband at a rock climbing gym in Minneapolis (2013). We enjoying spending our free time rolling around in dirt but can also sit in silence for hours enjoying each other’s presence. Craig has been my biggest cheerleader through my tough career transition. 
+I met my husband at a rock climbing gym in Minneapolis (2013). We enjoy spending our free time rolling around in dirt but can also sit in silence for hours enjoying each other’s presence. Craig has been my biggest cheerleader through my tough career transition. 
