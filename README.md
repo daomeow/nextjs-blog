@@ -4,16 +4,20 @@
 * [Description](#description)
 * [Installation](#installation)
 * [Cypress Testing](#cypress)
-* [Contributors](#contributors) 
+* [Contributor](#contributor) 
 
+<a name="description"></a>
 ## Description
  - This blog application was built in about a day with Next.js that utilizes two dynamic routes, the ability to toggle between light and dark mode and includes end-to-end testing. Users have the ability to read recent blog posts and to learn a little more about my family! 
  - [Click here](https://nextjs-blog-roan-seven.vercel.app/) to deploy the application
+ 
+<img src="https://media.giphy.com/media/Gudz8o4uE5gnsh5xNK/giphy-downsized.gif" width="600">
 
 ### Lighthouse audit:
 
 ![accessibility](./public/images/accessibility.png)
 
+<a name="installation"></a>
 ## Installation
 1. Clone down this [repo](https://github.com/Gifty-capstone/gifty-frontend)
 2. `cd` into project directory
@@ -28,6 +32,7 @@
 
 ![cypress](./public/images/cypress.png)
 
+<a name="contributor"></a>
 ## Contributors
 <table>
     <tr>
