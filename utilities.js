@@ -4,11 +4,9 @@ import matter from 'gray-matter';
 import remark from 'remark';
 import html from 'remark-html';
 
-//set filename path with process.cwd()
-
-
 export function getSortedData(directory) {
-  const fileNames = fs.readdirSync(directory)
+  const fileNames = fs.readdirSync(directory);
+
   return fileNames.map(fileName => {
     // Remove ".png" from file name to get id
     const id = fileName.replace(/\.md$/, '')
@@ -29,21 +27,9 @@ export function getSortedData(directory) {
 }
 
 export function getAllIds(directory) {
-  const fileNames = fs.readdirSync(directory)
+  const fileNames = fs.readdirSync(directory);
 
-  // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
+  // Returns an array of objects with params containing an object with the id
   return fileNames.map(fileName => {
     return {
       params: {
