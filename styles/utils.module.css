@@ -1,3 +1,28 @@
+.aboutMe {
+  font-size: 12px;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.familyCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.familyList {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
 .heading2Xl {
   font-size: 2.5rem;
   line-height: 1.2;
@@ -25,18 +50,6 @@
   line-height: 1.5;
 }
 
-.borderCircle {
-  border-radius: 9999px;
-}
-
-.colorInherit {
-  color: inherit;
-}
-
-.padding1px {
-  padding-top: 1px;
-}
-
 .list {
   list-style: none;
   padding: 0;
@@ -51,18 +64,6 @@
   color: #666;
 }
 
-.familyList {
-  list-style: none;
-  display: flex;
-}
-
-.familyCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 5px;
-}
-
 .nightMode {
   background-color: transparent;
 	border: none;
@@ -70,6 +71,6 @@
   font-size: 20px;
 }
 
-.aboutMe {
-  font-size: 12px;
+.padding1px {
+  padding-top: 1px;
 }
