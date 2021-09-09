@@ -3,8 +3,8 @@
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
-* [Cypress Testing](#cypress testing)
-* [Contributors](#contributors)
+* [Cypress Testing](#cypress)
+* [Contributors](#contributors) 
 
 ## Description
  - This blog application was built in about a day with Next.js that utilizes two dynamic routes, the ability to toggle between light and dark mode and includes end-to-end testing. Users have the ability to read recent blog posts and to learn a little more about my family! 
@@ -17,6 +17,7 @@
 4. Run `npm run dev` to begin the server
 5. Application should open in default browser window (if not, navigate to http://localhost:3000)
 
+<a name="cypress"></a>
 ## Cypress Testing 
 - Run and view all tests in terminal with `npx cypress run`
 - Open Cypress window with `npx cypress open`
