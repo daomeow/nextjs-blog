@@ -24,6 +24,6 @@ describe('Details page', () => {
   
   it('should have a paragraph about that family memeber', () => {
     cy.get('div > p')      
-      .contains('foo')
+      .contains('My father is the hardest working person I know')
   });
 });
