@@ -13,9 +13,9 @@ describe('Home page', () => {
   });
 
   it('should have an introduction, blog and family memeber section', () => {
-    cy.get('h2').eq(0).contains('Introduction')
-      .get('h2').eq(1).contains('Blog')
-      .get('h2').eq(2).contains('Family Members')
+    cy.get('.utils_aboutMe__1Q4Mc').contains('I am a first-generation American')
+      .get('h2').eq(0).contains('Blog')
+      .get('h2').eq(1).contains('Family Members')
   });
 
   it('should display the blog\'s title and date', () => {

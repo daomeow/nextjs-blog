@@ -9,6 +9,7 @@ import { useDarkMode } from './useDarkMode';
 const name = 'Melanie';
 export const siteTitle = 'My Blog';
 
+// Reused between pages 
 export default function Layout({ children, home }) {
   const [isDark, setIsDark] = useDarkMode();
 
