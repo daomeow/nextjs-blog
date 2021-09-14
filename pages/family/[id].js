@@ -16,6 +16,7 @@ export default function Family ({ postData }) {
   )
 };
 
+// Returns an array of possible vlaues for id
 export async function getStaticPaths() {
   const paths = getAllFamilyIds()
   return {
@@ -24,9 +25,11 @@ export async function getStaticPaths() {
   }
 };
 
+// On pre-render parse data to pass object to Home component 
 export async function getStaticProps({ params }) {
   // remark needs await 
   const postData = await getFamilyData(params.id)
+
   return {
     props: {
       postData

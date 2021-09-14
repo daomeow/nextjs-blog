@@ -21,6 +21,7 @@ export default function Post({ postData }) {
   )
 }
 
+// Returns an array of possible vlaues for id
 export async function getStaticPaths() {
   const paths = getAllPostIds()
   return {
@@ -29,6 +30,7 @@ export async function getStaticPaths() {
   }
 }
 
+// On pre-render parse data to pass object to Home component 
 export async function getStaticProps({ params }) {
   // remark needs await 
   const postData = await getPostData(params.id)

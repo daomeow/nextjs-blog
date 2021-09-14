@@ -1,15 +1,18 @@
 import { useState, useEffect } from 'react';
 
 export const useDarkMode = () => {
+	// Store into local storage 
 	const [isDark, setIsDark] = useState(() => {
 		try {
 			const item = window.localStorage.getItem('isDarkMode');
+	
 			return item ? JSON.parse(item) : undefined;
 		} catch (error) {
 			return false;
 		}
 	});
 
+	// Change classname 
 	useEffect(() => {
 		isDark
 			? window.document.body.classList.add('dark')

@@ -5,6 +5,7 @@ import remark from 'remark';
 import html from 'remark-html';
 
 export function getSortedData(directory) {
+  // Synchronously read contents of a given directory
   const fileNames = fs.readdirSync(directory);
 
   return fileNames.map(fileName => {
